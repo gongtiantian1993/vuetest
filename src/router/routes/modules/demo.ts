@@ -1,7 +1,6 @@
 import type { AppRouteModule } from '/@/router/types';
 
 import { LAYOUT } from '/@/router/constant';
-import { t } from '/@/hooks/web/useI18n';
 
 const demo: AppRouteModule = {
   path: '/demo',
@@ -24,11 +23,11 @@ const demo: AppRouteModule = {
       },
     },
     {
-      path: 'workbench',
-      name: 'Workbench',
-      component: () => import('/@/views/demo/workbench/index.vue'),
+      path: 'watch',
+      name: 'Watch',
+      component: () => import('/@/views/demo/watch/index.vue'),
       meta: {
-        title: t('routes.dashboard.workbench'),
+        title: 'Watch/WatchEffect/Computed',
       },
     },
   ],

@@ -16,6 +16,9 @@
       type: Array,
       default: () => [],
     },
+    fn: {
+      type: Function,
+    },
   });
   // 注：  如果在子组件中并没有用props接收， 则必须通过emits更新，即打开注释的两行代码
   // const emits = defineEmits(['update:modellist']);
@@ -25,6 +28,7 @@
     // emits('update:modellist', arr);
     value.value = '';
   };
+  console.log(props.fn());
 </script>
 
 <style scoped></style>
