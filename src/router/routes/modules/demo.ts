@@ -23,11 +23,19 @@ const demo: AppRouteModule = {
       },
     },
     {
-      path: 'watch',
-      name: 'Watch',
-      component: () => import('/@/views/demo/watch/index.vue'),
+      path: 'test',
+      name: 'Test',
+      component: () => import('/@/views/demo/test/index.vue'),
       meta: {
-        title: 'Watch/WatchEffect/Computed',
+        title: '基础练习',
+      },
+    },
+    {
+      path: 'built-in-components',
+      name: 'BuiltInCom',
+      component: () => import('/@/views/demo/builtIncom/index.vue'),
+      meta: {
+        title: '内置组件',
       },
     },
   ],

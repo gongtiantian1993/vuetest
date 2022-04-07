@@ -1,7 +1,9 @@
 <template>
   <a-card title="生命周期钩子">
     <ul>
-      <li v-for="(item, index) in hooklList" :key="index">{{ item.name }} - {{ item.desc }}</li>
+      <li v-for="(item, index) in hooklList" :key="index"
+        >{{ item.name }} - {{ item.desc }} <a-divider
+      /></li>
     </ul>
   </a-card>
 </template>

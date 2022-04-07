@@ -11,6 +11,7 @@
       ·给 watch 第三个参数 添加 { immediate:true } 可以立即执行，没有惰性。
       <br />
     </div>
+    <a-divider />
     <div>
       <h1>watchEffect</h1>
       ·立即执行，没有惰性。

@@ -7,7 +7,7 @@
     </p>
     <p>{{ answer }}</p>
     <img :src="imgUrl" alt="" />
-    <hr />
+    <a-divider />
     <h2
       >watch第一个参数可以是单ref,计算函数：如() => x.value + y.value，数组,
       reactive对象某属性(单独reactive对象某一属性这样监听() =>
@@ -17,7 +17,7 @@
     +
     <a-input v-model:value="p2" />=
     <span>{{ p1 * 1 + p2 * 1 }}</span>
-    <hr />
+    <a-divider />
     <a-input v-model:value="student.name" />
     <a-input v-model:value="student.age" />
     <a-input v-model:value="student.from" />
@@ -67,8 +67,4 @@
   //   });
 </script>
 
-<style lang="less" scoped>
-  hr {
-    margin: 20px;
-  }
-</style>
+<style lang="less" scoped></style>

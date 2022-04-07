@@ -9,7 +9,7 @@
     <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
     <p>出版书的数量(使用计算属性定义新变量):</p>
     <span>{{ publishedBooksMessage }}</span>
-    <hr />
+    <a-divider />
     <a-input placeholder="Basic usage" v-model:value="count" />
     <p>当前输入的为数字：{{ isNumber }}</p>
   </a-card>

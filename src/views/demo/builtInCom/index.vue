@@ -7,30 +7,18 @@
     </a-select>
     <a-row :gutter="[16, 16]">
       <a-col :span="spanSetting.defaultValue">
-        <Computed />
+        <TransitionCom />
       </a-col>
       <a-col :span="spanSetting.defaultValue">
-        <Event />
-      </a-col>
-      <a-col :span="spanSetting.defaultValue">
-        <LifeCycleHooks />
-      </a-col>
-      <a-col :span="spanSetting.defaultValue">
-        <Watch />
-      </a-col>
-      <a-col :span="spanSetting.defaultValue">
-        <WatchEffect />
+        <KeepaliveCom />
       </a-col>
     </a-row>
   </PageWrapper>
 </template>
 <script setup>
   import { PageWrapper } from '/@/components/Page';
-  import Computed from './components/computed.vue';
-  import Event from './components/event.vue';
-  import LifeCycleHooks from './components/lifeCycleHooks.vue';
-  import Watch from './components/watch.vue';
-  import WatchEffect from './components/watchEffect.vue';
+  import TransitionCom from './components/transition.vue';
+  import KeepaliveCom from './components/keepalive.vue';
   import { reactive } from 'vue';
   const spanSetting = reactive({
     defaultValue: 6,
