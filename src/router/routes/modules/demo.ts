@@ -38,6 +38,14 @@ const demo: AppRouteModule = {
         title: '内置组件',
       },
     },
+    {
+      path: 'app-test',
+      name: 'AppTest',
+      component: () => import('/@/views/demo/test/applicationTest.vue'),
+      meta: {
+        title: '综合练习',
+      },
+    },
   ],
 };
 

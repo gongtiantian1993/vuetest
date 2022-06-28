@@ -3,7 +3,7 @@
     <ul>
       <li v-for="(item, index) in list" :key="index">{{ index + 1 }}. {{ item }}</li>
     </ul>
-    <Add v-model:modellist="list" :fn="fn"/>
+    <Add v-model:modellist="list" :fn="fn" />
   </a-card>
 </template>
 
